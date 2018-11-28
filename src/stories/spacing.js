@@ -10,6 +10,8 @@ import defaultTheme from "../themes";
 
 storiesOf("Box", module).addWithJSX("spacing example", () => (
   <ThemeProvider theme={defaultTheme}>
-    <Box p={number("padding (on spacing scale)", 1)}>Hello world</Box>
+    <Box px={number("px", 1)} py={number("py", 1)}>
+      Hello world
+    </Box>
   </ThemeProvider>
 ));
