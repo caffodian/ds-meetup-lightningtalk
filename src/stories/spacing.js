@@ -1,6 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
+import { number } from "@storybook/addon-knobs";
 
 import { ThemeProvider } from "styled-components";
 
@@ -9,8 +10,6 @@ import defaultTheme from "../themes";
 
 storiesOf("Box", module).addWithJSX("spacing example", () => (
   <ThemeProvider theme={defaultTheme}>
-    <Box p={1} border="1px solid" display="inline-block">
-      Hello world
-    </Box>
+    <Box p={number("padding (on spacing scale)", 1)}>Hello world</Box>
   </ThemeProvider>
 ));

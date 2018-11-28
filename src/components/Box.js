@@ -8,6 +8,11 @@ const Box = styled.div`
   ${display}
 `;
 
+Box.defaultProps = {
+  display: "inline-block",
+  border: "1px solid"
+};
+
 Box.displayName = "Box";
 
 export default Box;
