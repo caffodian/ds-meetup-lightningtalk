@@ -10,6 +10,7 @@ setAddon(JSXAddon);
 
 function loadStories() {
   require("../src/stories");
+  require("../src/stories/basicBox");
   require("../src/stories/spacing");
 }
 
