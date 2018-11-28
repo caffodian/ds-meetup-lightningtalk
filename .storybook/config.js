@@ -11,6 +11,8 @@ setAddon(JSXAddon);
 function loadStories() {
   require("../src/stories/basicBox");
   require("../src/stories/spacing");
+  require("../src/stories/buttonVariants");
+  require("../src/stories/themeModification");
 }
 
 configure(loadStories, module);

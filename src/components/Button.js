@@ -1,10 +1,9 @@
-import { space, color, display } from "styled-system";
+import { buttonStyle, space } from "styled-system";
 import styled from "styled-components";
 
 const Button = styled.button`
   ${space}
-  ${color}
-  ${display}
+  ${buttonStyle}
 `;
 
 Button.displayName = "Button";
