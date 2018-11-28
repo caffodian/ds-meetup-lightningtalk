@@ -8,6 +8,7 @@ setAddon(JSXAddon);
 
 function loadStories() {
   require("../src/stories");
+  require("../src/stories/spacing");
 }
 
 configure(loadStories, module);
